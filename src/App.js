@@ -43,7 +43,7 @@ export class App extends Component {
         <Router>
 
           <Switch>
-            <Route exact path="/">
+            <Route path="/">
               {this.props.auth0.isAuthenticated ? <Home reciveData={this.reciveData} /> : <Landing />}
             </Route>
             <Route path="/home">
